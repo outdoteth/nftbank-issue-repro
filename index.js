@@ -38,7 +38,7 @@ const fetchNftbankWeightings = async (address, totalSupply) => {
     process.stdout.write(`Progress: ${prices.length} / ${totalSupply}...`);
   }
 
-  console.log(`\n\nDone in ${(Date.now() - start) / 1000}ms`);
+  console.log(`\nDone in ${(Date.now() - start) / 1000}s`);
 
   return prices;
 };
